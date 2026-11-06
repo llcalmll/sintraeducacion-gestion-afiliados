@@ -1,0 +1,18 @@
+# Publicación en Cloudflare Pages (plan gratis): página + funciones /api + base de datos D1.
+# Pasos completos en DESPLIEGUE.md.
+name = "sintraeducacion"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sintraeducacion"
+# Base y bucket propios de cada instalación.
+database_id = "TU_DATABASE_ID"
+migrations_dir = "api/migraciones"
+
+# Archivos adjuntos (registros civiles de los hijos). Privados: solo los sirve /api/archivos con sesión.
+# Base y bucket propios de cada instalación.
+[[r2_buckets]]
+binding = "ARCHIVOS"
+bucket_name = "sintraeducacion-archivos"

@@ -1,0 +1,29 @@
+node_modules/
+dist/
+# Los datos reales de afiliados nunca se suben al repositorio
+web/demo-data/
+*.xlsx
+*.xls
+*.pdf
+*.csv
+video/out/
+web/.env.local
+.env.local
+
+# Secretos y estado local de Cloudflare
+web/.dev.vars
+.dev.vars
+web/.wrangler/
+.wrangler/
+respaldo*.sql
+web/respaldo*.sql
+SECRETOS-NO-SUBIR.txt
+web/.token-cloudflare
+.token-cloudflare
+web/access.json
+web/.wrangler-respaldo/
+
+# Capturas de la app: ficticios.js cambia nombres y cédulas, pero colegio y fecha de nacimiento siguen siendo reales
+video/public/app/
+video/public/actualizacion/app/
+video/captura/revision/
